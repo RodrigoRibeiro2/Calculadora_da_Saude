@@ -1,0 +1,86 @@
+body {
+    margin: 50px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #360745;
+}
+
+h2 {
+    max-width: 400px;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    max-width: 300px;
+    width: 100%;
+    padding: 10px;
+    display: block;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color: #360745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+input[type="reset"] {
+    padding: 10px;
+    background-color: #d43a00;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    font-weight: bold;
+    font-size: 17px;
+    color: #360745;
+}
+
+#imc-weight {
+    margin-bottom: 15px;
+}
+
+#bp-systolic {
+    margin-bottom: 10px;
+}
+
+#diabetes-glucose {
+    margin-bottom: 10px;
+}
+
+#Links {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+@media screen and (max-width:768px) {
+
+    .container {
+        width: 100%;
+        flex-direction: column;
+    }
+}
