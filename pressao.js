@@ -22,14 +22,19 @@ function calculateBloodPressure() {
 function calculateHypertensionClassification(systolic, diastolic) {
     if (systolic < 90 && diastolic < 60) {
         return "<span style='color: #31a252; font-weight: bold;'>Pressão arterial baixa (hipotensão)</span>";
-    } else if (systolic >= 90 && systolic <= 120 && diastolic >= 60 && diastolic <= 80) {
+        
+    } else if (systolic >= 90 && systolic <= 125 && diastolic >= 60 && diastolic <= 85) {
         return "<span style='color: #31a252; font-weight: bold;'>Pressão arterial normal</span>";
-    } else if (systolic >= 121 && systolic <= 139 && diastolic >= 81 && diastolic <= 89) {
+
+    } else if (systolic >= 126 && systolic <= 139 && diastolic >= 86 && diastolic <= 89) {
         return "<span style='color:#f0d442; font-weight: bold;'>Pré-hipertensão</span>";
+
     } else if (systolic >= 140 && systolic <= 159 || diastolic >= 90 && diastolic <= 99) {
         return "<span style='color:#f59330; font-weight: bold;'>Hipertensão estágio 1 (Pressão arterial elevada)</span>";
+
     } else if (systolic >= 160 && systolic <= 179 || diastolic >= 100 && diastolic <= 119) {
         return "<span style='color:#f84600; font-weight: bold;'>Hipertensão estágio 2 (Pressão arterial elevada)</span>";
+
     } else if (systolic > 180 && diastolic > 120) {
         return "<span style='color:rgb(255, 0, 0); font-weight: bold;'>Crise hipertensiva (EMERGÊNCIA MÉDICA)</span>";
     }
