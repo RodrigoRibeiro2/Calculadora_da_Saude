@@ -2,6 +2,11 @@
 <html>
 
 <head>
+    <style>
+        h3{
+            max-width: 350px;
+        }
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>GLICEMIA</title>
@@ -10,10 +15,10 @@
 <body>
 </div class="container">
     <h1>Níveis de Glicemia</h1>
-    <h3 style="font-size: 17px; font-weight: normal;">Preencha os campos para saber seu nível de Glicemia.</h3>
+    <h3 style="font-size: 17px; font-weight: normal;">Por favor, preencha os campos com os resultados do seu teste para determinar o seu nível de glicemia.</h3>
     <br/>
     <form id="diabetes-form">
-        <label for="diabetes-glucose">Nível de Glicose:</label>
+        <label for="diabetes-glucose">Nível de Glicemia (ex: 75):</label>
         <input type="text" id="diabetes-glucose" required>
         <input type="submit" value="Calcular">
         <input type="reset" value="Limpar">
@@ -32,7 +37,6 @@
             <li><a href="imc.html">IMC</a></li>
             <li><a href="pressão.html">Pressão Arterial</a></li>
             <li><a href="diabete.html" style="color: #d43a00;">Glicemia</a></li>
-
         </ul>
     </nav>
 </div>

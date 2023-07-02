@@ -2,7 +2,7 @@ function calculateDiabetes() {
     var glucose = parseInt(document.getElementById('diabetes-glucose').value);
 
     if (isNaN(glucose) || glucose <= 0) {
-        alert("Por favor, insira um valor numérico válido para nível de glicose.");
+        alert("Por favor, insira um valor numérico válido para nível de glicemia.");
         return;
     }
 
@@ -10,7 +10,7 @@ function calculateDiabetes() {
     result.innerHTML = '';
 
     var classification = calculateDiabetesClassification(glucose);
-    result.innerHTML = 'Sua classificação de nível de glicose é: ' + classification;
+    result.innerHTML = 'Sua classificação de nível de glicemia é: ' + classification;
 }
 
 function calculateDiabetesClassification(glucose) {
